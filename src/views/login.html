@@ -56,53 +56,17 @@
     </header>
 
     <main>
-        <form action="/register" method="POST" class="create-form">
-            <h2 class="mb-10">Registro de Usuario</h2>
-            <div class="control-formulario">
-                <label>Nombre y Apellido</label>
-                <input type="text" name="nombreYApellido" class="control">
-            </div>
+        <form action="/login" method="POST" class="create-form">
+            <h2 class="mb-10">Login de Usuario</h2>
             <div class="control-formulario">
                 <label>Nombre de usuari@</label>
                 <input type="text" name="nombreDeUsuario" class="control">
             </div>
             <div class="control-formulario">
-                <label>Fecha de nacimiento</label>
-                <input type="date" name="fechaDeNacimiento" class="control">
-            </div>
-            <div class="control-formulario">
-                <label>Domicilio</label>
-                <input type="text" name="domicilio" class="control">
-            </div>
-            <div class="control-formulario">
-                <label>Perfil del usuario</label>
-                <input type="radio" name="perfilDelUsuario" value="Comprador" class="ml-10">Comprador
-                <input type="radio" name="perfilDelUsuario" value="Vendedor" class="ml-10">Vendedor
-            </div>
-            <div class="control-formulario">
-                <label>Categoría de interés</label>
-                <select name="categoriaDeInteres" class="control">
-                    <option value="electro">Electro</option>
-                    <option value="moda">Moda</option>
-                    <option value="hogar">Hogar</option>
-                    <option value="juguetería">Juguetería</option>
-                    <option value="vidaSana">Vida sana</option>
-                </select>
-            </div>
-            <div class="control-formulario">
-                <label>Foto de usuario</label>
-                <input type="file" name="fotoDeUsuario" accept=".jpg, .png" class="control">
-            </div>
-            <div class="control-formulario">
                 <label>Contraseña</label>
                 <input type="password" name="contraseña" class="control">
             </div>
-            <div class="control-formulario">
-                <label>Confirmar contraseña</label>
-                <input type="password" name="confirmarContraseña" class="control">
-            </div>
             <button type="submit" class="boton-formulario">Enviar</button>
-            <button type="reset" class="boton-formulario">Borrar</button>
         </form>
     </main>
 

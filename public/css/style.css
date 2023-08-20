@@ -244,7 +244,8 @@ footer {
 
 .control-formulario label {
     margin-bottom: 5px;
-    font-style: italic;
+    font-style: normal;
+    font-weight: bold;
     display: block;
 }
 
@@ -254,7 +255,7 @@ footer {
 }
 
 .boton-formulario {
-    background-color: #222222;
+    background-color: #1259c3;
     color: white;
     border: none;
     font-size: 20px;
