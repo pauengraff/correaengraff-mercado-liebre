@@ -34,20 +34,20 @@ body {
     width: 30%;
 }
 
-.font-12 {
-    font-size: 12px;
-}
-
 .size-descuentos-descripciones{
-    font-size: 14px;
+    font-size: 16px;
     color: green;
     width: 70%;
     padding: 18px 5px;
 }
 
 .size-h3 {
-    font-size: 18px;
+    font-size: 16px;
     color: #222222;
+}
+
+.font-12 {
+    font-size: 12px;
 }
 
 .main-header {
@@ -82,7 +82,7 @@ body {
 }
 
 .hamburger-button {
-    background-color: #03264c;
+    background-color: #1259c3;
     color: white;
     display: flex;
     max-width: 50px;
@@ -118,7 +118,7 @@ footer {
 .icon {
     font-size: 2em;
     margin-bottom: 10px;
-    color:#03264c;
+    color:#1259c3;
 }
 
 .vw-90 {
@@ -132,6 +132,10 @@ footer {
 
 .mb-10 {
     margin-bottom: 10px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
 }
 
 .ml-10 {
@@ -307,3 +311,11 @@ footer {
     margin-top: 40px;
 }
 }
+
+/*Paleta de colores
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a; */

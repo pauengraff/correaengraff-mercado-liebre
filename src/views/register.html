@@ -1,6 +1,129 @@
-<form action="" method="POST">
-    <label>
-        
-    </label>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-</form>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Mercado Liebre</title>
+</head>
+<body class="bg-light-grey size-body">
+    <header class="main-header bg-yellow">
+        <div class="main-header-top-bar w-50">
+            <img src="/images/logo-mercado-liebre.svg" class="logo">
+        </div>
+        <div class="p-2 w-50 align-center">
+            <form action="/" class="p-1 flex radius-1 bg-white">
+                <input class="flex-grow b-none outline-none font-12" type="text" name="search"
+                    placeholder="Buscá productos por nombre, marcas o palabras clave" />
+                <button type="submit" class="bg-white b-none">
+                    <i class="fa-solid fa-magnifying-glass bold ml-10"></i>
+                </button>
+            </form>
+        </div>
+            <h2 class="copy-header">
+                <i class="fa-solid fa-hand-holding-dollar"></i>
+                Comprá en cuotas y sin tarjeta de crédito
+            </h2>
+        </div>
+
+        <a href="#" class="hamburger-button">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+
+        <nav class="main-navbar">
+            <ul class="left-navbar">
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Tiendas Oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+            <ul class="rigth-navbar">
+                <li><a href="#">Creá tu cuenta</a><i class="fa-regular fa-id-card icon"></i></li>
+                <li><a href="#">Ingresá</a><i class="fa-solid fa-right-to-bracket icon"></i></li>
+                <li><a href="#">Mis compras</a><i class="fa-solid fa-basket-shopping icon"></i></li>
+            </ul>
+        </nav>    
+    </header>
+
+    <main>
+        <form action="/crea-tu-cuenta" method="POST">
+            <h2>Registro de Usuario</h2>
+            <div class="control-formulario">
+                <label>Nombre y Apellido</label>
+                <input type="text" name="nombreYApellido" class="control">
+            </div>
+            <div class="control-formulario">
+                <label>Nombre de usuari@</label>
+                <input type="text" name="nombreDeUsuario" class="control">
+            </div>
+            <div class="control-formulario">
+                <label>Fecha de nacimiento</label>
+                <input type="date" name="fechaDeNacimiento" class="control">
+            </div>
+            <div class="control-formulario">
+                <label>Domicilio</label>
+                <input type="text" name="domicilio" class="control">
+            </div>
+            <div class="control-formulario">
+                <label>Perfil del usuario</label>
+                <input type="radio" name="perfilDelUsuario" value="Comprador" class="control">
+                <input type="radio" name="perfilDelUsuario" value="Vendedor" class="control">
+            </div>
+            <div class="control-formulario">
+                <label>Categoría de interés</label>
+                <select name="categoriaDeInteres" class="control">
+                    <option value="electro">Electro</option>
+                    <option value="moda">Moda</option>
+                    <option value="hogar">Hogar</option>
+                    <option value="juguetería">Juguetería</option>
+                    <option value="vidaSana">Vida sana</option>
+                </select>
+            </div>
+            <div class="control-formulario">
+                <label>Foto de usuario</label>
+                <input type="file" name="fotoDeUsuario" accept=".jpg, .png" class="control">
+            </div>
+            <div class="control-formulario">
+                <label>Contraseña</label>
+                <input type="password" name="contraseña" class="control">
+            </div>
+            <div class="control-formulario">
+                <label>Confirmar contraseña</label>
+                <input type="password" name="confirmarContraseña" class="control">
+            </div>
+            <button type="submit" class="boton-formulario">Enviar</button>
+            <button type="reset" class="boton-formulario">Borrar</button>
+        </form>
+    </main>
+
+    <footer>
+        <section><i class="fa-solid fa-credit-card icon"></i>
+            <h3>Pagá con tarjeta o en efectivo</h3>
+            <p class="mb-30">Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
+        </section>
+        <section><i class="fa-solid fa-gift icon"></i>
+            <h3>Envío gratis desde $ 2.500</h3>
+            <p class="mb-30">Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                productos. Es un beneficio de Mercado Puntos.</p>
+        </section>
+        <section><i class="fa-solid fa-user-shield icon"></i>
+            <h3>Seguridad, de principio a fin</h3>
+            <p class="mb-30">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+                porque estás siempre protegid@.</p>
+        </section>
+        <section>
+            <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+        </section>
+    </footer>
+</body>
+</html>
