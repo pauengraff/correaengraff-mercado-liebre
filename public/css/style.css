@@ -34,8 +34,8 @@ body {
     width: 30%;
 }
 
-.font-xl {
-    font-size: 18px;
+.font-12 {
+    font-size: 12px;
 }
 
 .size-descuentos-descripciones{
@@ -58,12 +58,7 @@ body {
     z-index: 100;
     display: flex;
     flex-wrap: wrap;
-}
-
-header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
 }
 
 .logo {
@@ -80,6 +75,7 @@ header {
 }
 
 .copy-header {
+    width: 100%;
     text-align: center;
     padding: 15px;
     font-size: 18px;
