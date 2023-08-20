@@ -56,23 +56,23 @@
     </header>
 
     <main>
-        <form action="/register" method="POST" class="create-form">
-            <h2 class="mb-10">Registro de Usuario</h2>
+        <form action="/register" method="POST" class="create-form radius-1">
             <div class="control-formulario">
-                <label>Nombre y Apellido</label>
-                <input type="text" name="nombreYApellido" class="control">
+                <input type="text" name="nombreYApellido" class="control"
+                placeholder="Nombre y Apellido">
+                <span class="feedback">Error: los datos ingresados no son válidos</span>
             </div>
             <div class="control-formulario">
-                <label>Nombre de usuari@</label>
-                <input type="text" name="nombreDeUsuario" class="control">
+                <input type="text" name="nombreDeUsuario" class="control"
+                placeholder="Nombre de usuari@">
             </div>
             <div class="control-formulario">
                 <label>Fecha de nacimiento</label>
                 <input type="date" name="fechaDeNacimiento" class="control">
             </div>
             <div class="control-formulario">
-                <label>Domicilio</label>
-                <input type="text" name="domicilio" class="control">
+                <input type="text" name="domicilio" class="control"
+                placeholder="Domicilio">
             </div>
             <div class="control-formulario">
                 <label>Perfil del usuario</label>
@@ -94,12 +94,12 @@
                 <input type="file" name="fotoDeUsuario" accept=".jpg, .png" class="control">
             </div>
             <div class="control-formulario">
-                <label>Contraseña</label>
-                <input type="password" name="contraseña" class="control">
+                <input type="password" name="contraseña" class="control"
+                placeholder="Contraseña">
             </div>
             <div class="control-formulario">
-                <label>Confirmar contraseña</label>
-                <input type="password" name="confirmarContraseña" class="control">
+                <input type="password" name="confirmarContraseña" class="control"
+                placeholder="Confirmar contraseña">
             </div>
             <button type="submit" class="boton-formulario">Enviar</button>
             <button type="reset" class="boton-formulario">Borrar</button>
