@@ -59,13 +59,14 @@
         <form action="/login" method="POST" class="create-form">
             <div class="control-formulario">
                 <input type="text" name="nombreDeUsuario" class="control"
-                placeholder="Nombre de usuari@">
+                placeholder="Nombre de Usuario"
+                required minlength="4" maxlength="8" size="10">
             </div>
             <div class="control-formulario">
                 <input type="password" name="contraseña" class="control"
                 placeholder="Contraseña">
             </div>
-            <button type="submit" class="boton-formulario-login">Enviar</button>
+            <button type="submit" class="boton-formulario boton-formulario-login">Enviar</button>
         </form>
     </main>
 
