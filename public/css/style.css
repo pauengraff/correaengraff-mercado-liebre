@@ -389,6 +389,8 @@ footer {
 .icon:hover {
     color: #0022AA;
 }
+.logo-envio {
+    font-size: 14px;
 }
 
 @media (min-width: 769px){
@@ -399,6 +401,7 @@ footer {
 .product-shadow {
     box-shadow: none;
   }
+}
 }
 
 @media (min-width: 1281px){
